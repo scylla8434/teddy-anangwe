@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #000000 url('images/kali_snake_neon_green.jpg') no-repeat center center fixed;
+    background: #000000 url('images/kali.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #00ff00;
     line-height: 1.6;
@@ -11,16 +11,6 @@ header {
     text-align: center;
     padding: 50px 0;
     background: rgba(0, 0, 0, 0.7);
-}body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
 }
 
 nav a {
@@ -35,7 +25,7 @@ section {
 
 footer {
     background-color: #333;
-    color: white;
+    color: #00ff00;
     text-align: center;
     padding: 10px 0;
 }
@@ -116,41 +106,39 @@ section {
     box-shadow: 0 0 20px #00ff00;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #00ff00;
-    background: #000000;
-    color: #00ff00;
-    border-radius: 5px;
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background: #000000;
-    color: #00ff00;
-    border: 2px solid #00ff00;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-form button:hover {
-    background: #00ff00;
-    color: #000000;
-    transform: scale(1.05);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    border-top: 2px solid #00ff00;
-    margin-top: 20px;
-}
-
 footer p {
     margin: 0;
 } 
+    #tools-languages {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #tools-languages h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    #tools-languages h3 {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+
+    .tools, .languages {
+        display: flex;
+        justify-content: center;
+        gap: 30px;  /* Adds space between the icons */
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .tools img, .languages img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease;
+    }
+
+    .tools img:hover, .languages img:hover {
+        transform: scale(1.2); /* Slight zoom on hover */
+    }
+
