@@ -1,2 +1,2 @@
-# my-portfolio
-another
+# teddy anangwe
+this is my portfolio
