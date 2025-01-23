@@ -1,4 +1,17 @@
 body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000000 url('images/kali_snake_neon_green.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ff00;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7);
+}body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -26,3 +39,118 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #00ff00;
+}
+
+.main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #000000;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff00;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00ff00;
+    background: #000000;
+    color: #00ff00;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #000000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #00ff00;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #00ff00;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+} 

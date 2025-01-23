@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Professional Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-content">
+            <img src="images/my_picture.jpg" alt="Your Picture" class="profile-pic">
+            <h1>Your Name</h1>
+            <p>Big Data Cloud Professional | Developer | Enthusiast</p>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a [Your Profession]. Welcome to my portfolio!</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#" target="_blank">Project 1</a> - Description of Project 1.</li>
-            <li><a href="#" target="_blank">Project 2</a> - Description of Project 2.</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-    </section>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p text-align="center">
+                I am a cybersecurity enthusiast and a passionate web developer with strong proficiency in PHP,
+                 JavaScript, React, and Node.js. With a keen interest in securing digital environments, 
+                 I specialize in Vulnerability Assessment and Penetration Testing (VAPT), 
+                 combining my development skills with a security-first mindset to deliver robust and efficient solutions.
+            </p>
+        </section>
+        <section id="cv">
+            <h2>View My CV</h2>
+            <a href="path-to-your-cv.pdf" target="_blank">Click here to view my CV</a>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of the first project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of the second project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of the third project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out through any of the following:</p>
+            <ul>
+                <li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+                <li>Email: <a href="mailto:geek@example.com">geek@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></li>
+                <li>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2025 [Your Name]</p>
+        <p>&copy; 2025 Your Name</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
