@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teddy Anangwe</title>
+    <title>Teddy Anangwe - Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -11,19 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
             font-family: 'Orbitron', sans-serif;
             background: url('images/kali.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #0e9fdd;
             display: flex;
-            flex-direction: column;
             height: 100vh;
+            flex-direction: column;
         }
-
-        /* Sidebar Navigation */
+        
         .sidebar {
             width: 250px;
             background: rgba(0, 0, 0, 0.9);
@@ -47,15 +45,6 @@
             border-radius: 5px;
         }
 
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        /* Main Content */
         .main-content {
             margin-left: 270px;
             flex-grow: 1;
@@ -64,80 +53,70 @@
             align-items: center;
             width: calc(100% - 270px);
             text-align: center;
-            padding: 20px;
         }
-
+        
         .section {
             display: none;
             background: rgba(0, 0, 0, 0.8);
-            padding: 30px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(19, 167, 212, 0.5);
-            width: 90%;
-            max-width: 900px;
+            width: 80%;
+            max-width: 1000px;
         }
-
-        /* Skills Progress Bar */
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
         .progress-bar {
             background-color: #0e9fdd;
         }
 
-        /* Project Hover Effect */
-        .project img {
-            width: 100px;
-            height: 100px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .project img:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             .sidebar {
                 width: 100%;
                 height: auto;
                 position: relative;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
                 text-align: center;
-                padding: 10px;
             }
-
+            .sidebar a {
+                display: inline-block;
+                margin: 5px;
+            }
             .main-content {
                 margin-left: 0;
                 width: 100%;
             }
-
             .section {
-                width: 95%;
+                width: 90%;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
     <div class="sidebar">
         <img src="images/tedd.jpg" alt="Profile Photo" class="profile-photo">
         <h3 class="text-white">Teddy Anangwe</h3>
         <a href="#about" onclick="showSection('about')">About</a>
-        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#skills" onclick="showSection('skills')">Skills & Expertise</a>
         <a href="#projects" onclick="showSection('projects')">Projects</a>
         <a href="#contact" onclick="showSection('contact')">Contact</a>
         <a href="#cv" onclick="showSection('cv')">Download CV</a>
     </div>
 
-    <!-- Main Content -->
     <div class="main-content">
         <div id="about" class="section" style="display: block;">
             <h1>About Me</h1>
             <p class="typing-effect"></p>
         </div>
-
+        
         <div id="skills" class="section">
-                  <h2>My Skills & Expertise</h2>
+            <h2>My Skills & Expertise</h2>
             <div class="mb-3">
                 <label>PHP</label>
                 <div class="progress">
@@ -162,57 +141,30 @@
                     <div class="progress-bar" style="width: 75%;">75%</div>
                 </div>
             </div>
-            <div class="mb-3">
-                <label>Burp Suite</label>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 85%;">85%</div>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label>Metasploit</label>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label>Nmap</label>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;">90%</div>
-                </div>
-            </div>
         </div>
+        
         <div id="projects" class="section">
             <h2>Projects</h2>
-            <div class="project">
-                <a href="https://example.com" target="_blank">
-                    <img src="icons/esec.png" alt="eSecurity">
-                    <p>eSecurity</p>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://example.com" target="_blank">
-                    <img src="icons/ewshop.png" alt="eBay Clone">
-                    <p>eBay Clone</p>
-                </a>
-            </div>
+            <ul>
+                <li><a href="#">eSecurity</a></li>
+                <li><a href="#">MasenoEats</a></li>
+                <li><a href="#">NyumbaniInc</a></li>
+            </ul>
         </div>
-
+        
         <div id="contact" class="section">
-            
-            h2>Contact Me</h2>
-            <i class="fa fa-phone" style="font-size:24px"></i></i><a href="tel:254716711570">+254746711570</a><br>
-            <i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:teddyanangwe@gmail.com">teddyanangwe@gmail.com</a><br>
-            <i class="fa fa-linkedin-square" style="font-size:24px"></i> <a href="https://www.linkedin.com/in/amalemba-anangwe-a961b721b" target="_blank">amalemba</a><br>
-            <i class="fa fa-github" style="font-size:24px"></i><a href="https://github.com/scylla8434" target="_blank">scylla8434</a>
-
-              </div>
-
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:teddyanangwe@gmail.com">teddyanangwe@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/scylla8434">scylla8434</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/amalemba-anangwe-a961b721b">amalemba-anangwe</a></p>
+        </div>
+        
         <div id="cv" class="section">
-            <h2>Download CV</h2>
-            <a href="docs/teddy_anangwe_cv.pdf" download class="btn btn-primary">Download CV</a>
+            <h2>Download My CV</h2>
+            <a href="docs/teddy_anangwe_cv.pdf" target="_blank" download class="btn btn-primary">Download CV</a>
         </div>
     </div>
-
+    
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(section => {
@@ -220,14 +172,12 @@
             });
             document.getElementById(sectionId).style.display = 'block';
         }
-
+        
         document.addEventListener("DOMContentLoaded", function() {
             new Typed('.typing-effect', {
-                strings: ["
-                    "Welcome to my portfolio! \nMy name is Teddy Anangwe, a results-driven Computer Scientist \nwith expertise in Vulnerability Assessment and Penetration Testing. \nI specialize in Web Development using PHP, JavaScript, and React, \nwhile also excelling as a Cloud and Network Security Specialist. \nWith a strong background in Graphic Design using Adobe Creative Suite, \nI bring creative solutions to technology. \nAdditionally, I am a System Administrator and IT Infrastructure Expert, \ndedicated to optimizing and securing digital environments."
-               "],
-                typeSpeed: 20,
-                backSpeed: 10000,
+                strings: ["Welcome to my portfolio! I am Teddy Anangwe, a Computer Scientist specializing in Web Development, VAPT, and Cloud Security."],
+                typeSpeed: 50,
+                backSpeed: 1000,
                 loop: true
             });
         });
