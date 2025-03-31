@@ -1,5 +1,5 @@
 <?php
-  $receiving_email_address = 'teddyanagwe@gmail.com'; // Replace with your email
+  $receiving_email_address = 'teddyanagwe@gmail.com'; 
 
   // Check if the required PHP Email Form library exists
   if (file_exists($php_email_form = '../assets/vendor/php-email-form/validate.js')) {
@@ -20,11 +20,11 @@
 
   // SMTP Configuration (Replace with real SMTP credentials)
   $contact->smtp = array(
-      'host' => 'smtp.example.com',  // Use your mail server (e.g., smtp.gmail.com for Gmail)
-      'username' => 'your_email@example.com', // SMTP username
-      'password' => 'yourpassword', // SMTP password
-      'port' => '587', // Typically 465 (SSL) or 587 (TLS)
-      'encryption' => 'tls' // Use 'ssl' or 'tls' depending on the server configuration
+      'host' => 'smtp.gmail.com',  // 
+      'username' => 'teddyanangwe@gmail.com', // SMTP username
+      'password' => '', // SMTP password
+      'port' => '587', 
+      'encryption' => 'tls' 
   );
 
   // Add message content
