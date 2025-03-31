@@ -8,9 +8,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -25,14 +22,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/int.css" rel="stylesheet">  
 </head>
 
 <body class="index-page">
@@ -52,35 +42,35 @@
 
     <div class="social-links text-center">
 
-      <a href="https://github.com/scylla8434" class="github"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/amalemba-anangwe-a961b721b" class="email"><i class="bi bi-envelope"></i></a>
-      <a href="tel:254716711570" class="phone"><i class="bi bi-phone"></i></a>
-      <a href="https://www.linkedin.com/in/amalemba-anangwe-a961b721b" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/scylla8434" class="github" target="blank"><i class="bi bi-github"></i></a>
+      <a href="mailto:teddyanagwe@gmail.com" class="email" target="_blank">
+        <i class="bi bi-envelope"></i>
+      </a>      
+      <a href="tel:254716711570" class="phone"><i class="bi bi-phone" target="blank"></i></a>
+      <a href="https://www.linkedin.com/in/amalemba-anangwe-a961b721b" class="linkedin" target="blank"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#education"><i class="bi bi-mortarboard navicon"></i> Education</a></li>
+        <li><a href="#interests"><i class="bi bi-stars navicon"></i> Interests</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-        </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
-
   </header>
-
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/scy.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/back.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Teddy Anangwe</h2>
-        <p>Welcome to my portfolio. I am a <span class="typed" data-typed-items=" Cybersecurity Ananlyst, Developer, Designer, Freelancer, IT Assistant">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        
+        <p>Welcome to my portfolio. I am a <span class="typed" data-typed-items=" Software Developer, Cybersecurity Analyst, Designer, Freelancer, IT Assistant"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -91,7 +81,12 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>My name is Teddy Anangwe, a results-driven Computer Scientist with expertise in Vulnerability Assessment and Penetration Testing. I specialize in Web Development using PHP, JavaScript, and React, while also excelling as a Cloud and Network Security Specialist. With a strong background in Graphic Design using Adobe Creative Suite, I bring creative solutions to technology. Additionally, I am a System Administrator and IT Infrastructure Expert dedicated to optimizing and securing digital environments.</p>
+        <p>My name is Teddy Anangwe, a results-driven Computer Scientist with expertise in Fullstack Software Development as well as
+           Vulnerability Assessment and Penetration Testing. I specialize in these technologies: PHP, SpringBoot, JavaScript, Angular, React,
+            restful APIs  while also excelling 
+           as a Cloud and Network Security Specialist. With a strong background in Graphic Design using Adobe Creative Suite, 
+           I bring creative solutions to technology. Additionally, I am an IT Infrastructure Expert 
+           dedicated to optimizing and securing digital environments.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -101,14 +96,13 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Cybersecurity Analyst &amp; Web Developer.</h2>
+            <h2>Software Developer &amp; Cybersecurity Ananlyst.</h2>
             <p class="fst-italic py-3">
               Below is a brief bio of me.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>10 March 2000</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>teddy-anangwe.vercel.app</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254746711570</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
@@ -116,23 +110,69 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bsc</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>teddyanangwe@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
             </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
+            <p class="py-3">🎢My brain runs on caffeine, curiosity, and a dash of controlled chaos.
+               I have an uncanny ability to debug code at lightning speed—except when someone’s watching.
+                I firmly believe that ‘just one more feature’ is a valid excuse for staying up late, 
+                and my best ideas usually arrive when I’m nowhere near my laptop. If problem-solving were an Olympic sport,
+                 I’d at least win the ‘Most Dramatic Reactions to Bugs’ category! 😆
           </div>
         </div>
-
       </div>
-
     </section><!-- /About Section -->
+<div id="education" class="education-section">
+  <h2><i class="bi bi-mortarboard"></i> Education</h2>
+  <div class="edu-item">
+    <div class="edu-title">BSc in Computer Science</div>
+    <div class="edu-place">Maseno University</div>
+    <div class="edu-year">Graduation Year: 2024</div>
+  </div>
+    <div class="edu-item">
+    <div class="edu-title">Cloud & Network Security</div>
+    <div class="edu-place">USIU/CyberShujaa</div>
+    <div class="edu-year">Graduation Year: 2024</div>
+  </div>
+</div>
+<div id="interests" class="interests-section">
+  <h2><i class="bi bi-stars"></i> Interests</h2>
+
+  <div class="interests-container">
+    <div class="interest-item">
+      <i class="bi bi-controller interest-icon"></i>
+      <span class="interest-text">Gaming</span>
+    </div>
+
+    <div class="interest-item">
+      <i class="bi bi-code-slash interest-icon"></i>
+      <span class="interest-text">Coding Challenges</span>
+    </div>
+
+    <div class="interest-item">
+      <i class="bi bi-music-note interest-icon"></i>
+      <span class="interest-text">Music</span>
+    </div>
+
+    <div class="interest-item">
+      <i class="bi bi-airplane interest-icon"></i>
+      <span class="interest-text">Traveling</span>
+    </div>
+
+    <div class="interest-item">
+      <i class="bi bi-camera interest-icon"></i>
+      <span class="interest-text">Photography</span>
+    </div>
+
+    <div class="interest-item">
+      <i class="bi bi-book-half interest-icon"></i>
+      <span class="interest-text">Reading Tech Blogs</span>
+    </div>
+  </div>
+</div>
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
@@ -193,21 +233,6 @@
         <div class="row skills-content skills-animation">
 
           <div class="col-lg-9">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
             <div class="progress">
               <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
@@ -225,18 +250,22 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
             <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Angular</span> <i class="val">93%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
             <div class="progress">
-              <span class="skill"><span>Adobe Photoshop</span> <i class="val">77%</i></span>
+              <span class="skill"><span>React</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>SpringBoot</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
             <div class="progress">
@@ -258,9 +287,7 @@
               </div>
             </div><!-- End Skills Item -->
           </div>
-
         </div>
-
       </div>
 
     </section><!-- /Skills Section -->
@@ -273,13 +300,9 @@
         <h2>Download My CV</h2>
             <a href="docs/teddy_anangwe_cv.pdf" target="_blank" download class="btn btn-primary">Download</a>
          </div><!-- End Section Title -->
-
-     
     </section><!-- /Resume Section -->
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
@@ -293,44 +316,44 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">eSecurity</li>
-            <li data-filter=".filter-product">eBay</li>
-            <li data-filter=".filter-branding">masenoEats</li>
+            <li data-filter=".filter-product">Fintech Loan Management System</li>
+            <li data-filter=".filter-branding">Learning Management System</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/security.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>eSecurity</h4>
                   <p>A digital platform that automates the guard hiring process</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="eSecurity" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/projects/security.jpg" title="eSecurity" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://security.vercel.app" target ="blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/loan.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>eBay</h4>
+                  <h4>Fintech Loan Management System</h4>
                   <p>An online platform that digitizes the process of commerce</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/projects/loan.png" title="Product 1" target="blank" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://loan.vercel.app" title="More Details" target="blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/learning.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>masenoEats</h4>
+                  <h4>Learning Management System</h4>
                   <p>A platform that easens the work done by caffes in Maseno</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/projects/learning.jpg"  target="blank" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://learning.vercel.app" title="More Details" target="blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
